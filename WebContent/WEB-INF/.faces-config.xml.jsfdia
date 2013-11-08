@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#pages#cadastro.jsp"
+  PATH="/pages/cadastro.jsp" SHAPE="200,264,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#cadastro.jsp:0" NAME="item"
+   PATH="/pages/cadastro.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="continue:#{signupBean.signup}:#pages#user#home.jsp"
+    NAME="output" PATH="/pages/user/home.jsp"
+    TARGET="rules:#pages#user#home.jsp"
+    TITLE="#{signupBean.signup}:continue" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="continue:#{loginBean.signin}:#pages#user#home.jsp"
+    NAME="output1" PATH="/pages/user/home.jsp"
+    TARGET="rules:#pages#user#home.jsp"
+    TITLE="#{loginBean.signin}:continue" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#login.jsp" PATH="/pages/login.jsp"
+  SHAPE="216,64,50,57" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#login.jsp:0" NAME="item"
+   PATH="/pages/login.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="continue:#{signupBean.emailValidate}:#pages#cadastro.jsp"
+    NAME="output" PATH="/pages/cadastro.jsp"
+    TARGET="rules:#pages#cadastro.jsp"
+    TITLE="#{signupBean.emailValidate}:continue" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="continue:#{loginBean.signin}:#pages#user#home.jsp"
+    NAME="output1" PATH="/pages/user/home.jsp"
+    TARGET="rules:#pages#user#home.jsp"
+    TITLE="#{loginBean.signin}:continue" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#user#home.jsp"
+  PATH="/pages/user/home.jsp" SHAPE="488,160,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#user#home.jsp:0" NAME="item"
+   PATH="/pages/user/home.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="continue:#{postBean.toPost}:#pages#user#home.jsp" NAME="output"
+    PATH="/pages/user/home.jsp" TARGET="rules:#pages#user#home.jsp"
+    TITLE="#{postBean.toPost}:continue" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

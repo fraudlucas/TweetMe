@@ -1,0 +1,123 @@
+.align-right {
+	position: relative;
+	float: right;
+}
+
+.margin-t-b-0 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.margin-t-0 {
+	margin-top: 0px;
+}
+
+.content {
+	position: absolute;
+}
+
+.pos-adv {
+	position: fixed;
+	top: 150px;
+	left: 150px;
+}
+
+.width-adv {
+	width: 600px;
+}
+
+.height-adv {
+	height: 400px;
+}
+
+.pos-signup {
+	position: fixed;
+	top: 150px;
+	left: 760px;
+}
+
+.height-signup {
+	height: 400px;
+}
+
+.width-signup {
+	width: 350px;
+}
+
+.height-signup2 {
+	width: 800px;
+}
+
+.width-profile {
+	width: 210px;
+}
+
+.height-profile {
+	height: 300px;
+}
+
+.img-profile {
+	height: 150px;
+	width: 150px;
+}
+
+.img-profile-2 {
+	height: 110px;
+	width: 110px;
+}
+
+.txt-align-profile {
+	text-align: center;
+}
+
+.pos-home-1 {
+	position: absolute;
+	top: 150px;
+	left: 400px;
+}
+
+.pos-home-2 {
+	position: absolute;
+	top: 400px;
+	left: 400px;
+}
+
+.width-home {
+	width: 700px;
+}
+
+.height-home {
+	height: 1630px;
+}
+
+.height-home-2 {
+	height: 200px;
+}
+
+.pos-home-el {
+	position: relative;
+	display: block;
+}
+
+.width-home-el {
+	width: 640px;
+}
+
+.height-home-el {
+	height: 150px;
+}
+
+.jumbotron-home {
+	padding: 5px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: 200;
+	line-height: 2.1428571435;
+	color: inherit;
+	background-color: #fff;
+}
+
+.text-font {
+	font-size: 12pt !important;
+}
+
